@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario XYZ</title>
+</head>
+
+<body>
+    <div id="Contenedor" style="width:  500px;">
+        <h2>Título de su formulario en la pagina web</h2>
+        <form id="formulario1" name="formulario1" method="psot" action="data.php">
+            <fieldset id="datos_personales">
+                <legend>DATOS PERSONALES</legend>
+                <label for="nombre">Nombre</label><br>
+                <input type="text" name="nombre" id="nombre"><br>
+                <label for="apellidos">Apellidos</label><br>
+                <input type="text" name="apellidos" id="apellidos"><br>
+                <label for="direccion">Direccion</label><br>
+                <input type="text" name="direccion" id="direccion"><br>
+                <label for="dni">DNI</label><br>
+                <input type="text" name="dni" id="dni" maxlength="9"><br>
+                <label for="email">Email</label><br>
+                <input type="text" name="email" id="email"><br>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha"><br>
+                <label for="universidad">Universidad</label>
+                <select name="universidad" id="universidad">
+                    <option value="X" selected="selected">.....</option>
+                    <option value="A">USAT</option>
+                    <option value="B">USS</option>
+                    <option value="C">UNPRG</option>
+                    <option value="D">USM</option>
+                    <option value="E">UCV</option>
+                </select>
+            </fieldset>
+            <fieldset id="grupo_Sexo">
+                <legend>Sexo:</legend>
+                <input type="radio">
+                <label for="Masc">Masculino:</label><br>  
+                <input type="radio">
+                <label for="Fem">Femenino</label>  
+            </fieldset>
+            <fieldset id="grupo_cursos">
+                <legend>Cursos:</legend>
+                <input type="checkbox">
+                <label for="IA">Inteligencia Artificial</label><br>
+                <input type="checkbox">
+                <label for="BS">Bussines Inteligence</label><br>
+                <input type="checkbox">
+                <label for="CD">Ciencia de Datos</label><br>
+                <input type="checkbox">
+                <label for="CS">CyberSeguridad</label><br>
+            </fieldset>
+            <fieldset id="grupo_comentarios">
+                <legend>Comentarios</legend>
+                <textarea name="coment" id="coment" cols="50" rows="14"></textarea>
+            </fieldset>
+            <br>
+            <div id="botones">
+                <input type="reset" class="btn" value="Nuevo">
+                <input type="submit" class="btn" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
