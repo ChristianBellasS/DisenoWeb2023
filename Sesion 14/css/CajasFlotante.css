@@ -1,0 +1,13 @@
+div{
+    border: 1px solid;
+}
+.alinear{
+    width: 460px;
+    height: 250px; 
+    margin: 0 20px;
+}
+.caja3{
+    border-color: aquamarine;
+    margin-bottom: 8px;
+    clear: right;
+}

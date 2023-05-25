@@ -1,0 +1,104 @@
+body {
+    color: aliceblue;
+    font-family: arial;
+}
+.grid {
+    display: grid;
+   
+    min-height: 100vh; 
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 100px 1fr 100px 50px;
+    grid-template-areas: "head"
+        "nav" "section" "aside"
+        "footer";
+}
+
+header {
+    background-color:aquamarine;
+    grid-area: head;
+    margin: 4px;
+}
+
+nav {
+    background-color: rgb(70, 147, 180);
+    grid-area: nav;
+    margin: 4px;
+}
+
+section {
+    background-color:gray;
+    grid-area: section;
+    margin: 4px;
+}
+
+aside {
+    background-color:blueviolet;
+    grid-area: aside;
+    margin: 4px;
+}
+
+footer {
+    background-color: rgb(43, 226, 119);
+    grid-area: footer;
+    text-align: center;
+    margin: 4px;
+}
+
+@media(min-width: 600px) and (max-width:1000px){
+    .grid{
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 300px 250px 1fr 100px;
+        grid-template-areas: "head head"
+            "nav nav"
+            "aside section"
+            "footer footer";
+    }
+}
+
+@media(min-width: 1001px){
+    .grid{
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: 200px 1fr 100px;
+        grid-template-areas: "head head head"
+            "nav section aside"
+            "footer footer footer";
+    }
+}
+#uwu{
+    color:green;
+    text-align: justify;
+    font-family: 'Courier New';
+}
+#planif{
+    float: left;
+    margin: 4px;
+}
+
+#monitoreo{
+    float: left;
+    margin: 10px;
+}
+
+#conver{
+    float: left;
+    margin: 10px;
+}
+
+#text{
+    text-align: justify;
+}
+
+#as{
+    text-align: center;
+}
+
+#titulo{
+    width: 70%;
+    text-align: center;
+    color: tomato;
+    font-family:Impact;
+}
+#ferreteria{
+    float: right;
+
+}

@@ -1,0 +1,18 @@
+p{
+    background: coral;
+}
+.par{
+    background: pink;
+}
+p.par{
+    background: mediumaquamarine;
+}
+#parr{
+    background: orange;
+}
+p#parr{
+    background: red;
+}
+p.par#parr{
+    background: green;
+}

@@ -1,0 +1,17 @@
+div{
+    border: 1px solid;
+}
+
+img{
+    width: 400px;
+}
+
+p{
+    background-color: green;
+
+}
+
+#img{
+    flex-direction: column;
+    
+}

@@ -1,0 +1,54 @@
+
+.imagen{
+   float:left;
+}
+
+
+#img{
+    width: 540px;
+    height: 750px;
+}
+
+
+#datospersonales{
+    width: 100px;
+    background-color: aqua;
+}
+
+#pelicula{
+    width: 410px;
+    background-color: aqua;
+}
+
+
+#peliculasnovistas{
+    width: 410px;
+    background-color: aqua;
+}
+
+
+#argumento{
+    width: 410px;
+    background-color: aqua;
+}
+
+
+legend {
+    background-color: blue;
+}
+
+
+.parrafo{
+
+    font-family: Arial;
+    color: purple;
+}
+
+.contenedor{
+    border-style: solid;
+    width: 1200px;
+    height: 1000px;
+}
+
+
+

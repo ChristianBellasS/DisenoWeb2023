@@ -8,3 +8,36 @@
     display: flex;
     justify-content: center;
 }
+
+#titulo{
+    color:rgb(34, 0, 255);
+    text-align: center;
+    border: 1px solid #0000;
+    font-family: 'Times New Roman';
+}
+body{
+    background-color: #f3f8b8;
+}
+#nombre{
+    color:rgb(255, 0, 0)
+}
+#datos{
+    color:crimson;
+}
+#Perfil, #Estudios, 
+#Habilidades, #OtrosCursos,
+#Contactanos{
+    color: rgb(0, 141, 47);
+}
+.th{
+    text-align: center;
+    font-family: 'Times New Roman';
+}
+.text{
+    text-align: justify;
+    color: rgb(39, 39, 163);
+}
+.text01{
+    text-align: center;
+    color: rgb(39, 39, 163);
+}

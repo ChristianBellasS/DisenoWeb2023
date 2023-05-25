@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario De Inscripción</title>
+    <p style="float: right; clear: left; "  >
+        <img src="img/Frm.png" alt="Foto de Empresa" width="750" height="800" >
+    </p>
+</head>
+
+<body>
+    <div id="Contenedor" style="width:  500px">
+        <h2 style="color: green;"><em>FORMULARIO DE INSCRIPCIÓN</em></h2>
+        <form id="formulario1" name="formulario1" method="psot" action="data.php">
+            <fieldset id="datos_personales" style="border-color: yellow;">
+                <legend style="color: red;">DATOS PERSONALES</legend>
+                <label for="nombre" style="color:blue">Nombre</label><br>
+                <input type="text" name="nombre" id="nombre" style="width: 350px;"><br>
+                <label for="apellidos" style="color:blue">Apellidos</label><br>
+                <input type="text" name="apellidos" id="apellidos" style="width: 350px;"><br>
+                <label for="direccion" style="color:blue">Direccion</label><br>
+                <input type="text" name="direccion" id="direccion" style="width:  350px;"><br>
+                <label for="dni" style="color:blue">DNI</label><br>
+                <input type="text" name="dni" id="dni" maxlength="9"><br>
+                <label for="email" style="color:blue">Email</label><br>
+                <input type="text" name="email" id="email"><br>
+                <label for="fecha" style="color:blue">Fecha:</label> <br>
+                <input type="date" id="fecha" name="fecha" style="width: 200px;"><br>
+                <label for="universidad" style="color:blue">Universidad</label><br>
+                <select name="universidad" id="universidad" style="width: 200px;">
+                    <option value="X" selected="selected">......Seleccionar......</option>
+                    <option value="A">USAT</option>
+                    <option value="B">USS</option>
+                    <option value="C">UNPRG</option>
+                    <option value="D">USM</option>
+                    <option value="E">UCV</option>
+                </select>
+            </fieldset>
+            <fieldset id="grupo_Sexo" style="border-color: yellow;">
+                <legend style="color:red">SEXO:</legend>
+                <input type="radio" name = "btn1">
+                <label for="Masc">Masculino:</label><br>
+                <input type="radio" name = "btn1">
+                <label for="Fem">Femenino</label>
+            </fieldset>
+            <fieldset id="grupo_cursos" style="border-color: yellow;">
+                <legend style="color: red;">CURSOS:</legend>
+                <input type="checkbox">
+                <label for="IA">Inteligencia Artificial</label><br>
+                <input type="checkbox">
+                <label for="BS">Bussines Inteligence</label><br>
+                <input type="checkbox">
+                <label for="CD">Ciencia de Datos</label><br>
+                <input type="checkbox">
+                <label for="CS">CyberSeguridad</label><br>
+            </fieldset>
+            <fieldset id="grupo_comentarios" style="border-color: yellow;">
+                <legend style="color: red;">COMENTARIOS</legend>
+                <textarea name="coment" id="coment" cols="60" rows="14"></textarea>
+            </fieldset>
+            <br>
+            <div id="botones">
+                <p style="text-align: center;">
+                <!--Limpiar formulario:-->
+                <input type="reset" class="btn" value="Nuevo">
+                <input type="submit" class="btn" value="Enviar">
+                </p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

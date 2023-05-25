@@ -1,0 +1,39 @@
+body {
+    color: aliceblue;
+    font-family: arial;
+}
+.grid {
+    display: grid;
+   
+    min-height: 100vh; 
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 200px 1fr 100px;
+    grid-template-areas: "head head head"
+        "nav section aside"
+        "footer footer footer";
+}
+
+header {
+    background-color: blueviolet;
+    grid-area: head;
+}
+
+nav {
+    background-color: rgb(70, 147, 180);
+    grid-area: nav;
+}
+
+section {
+    background-color: brown;
+    grid-area: section;
+}
+
+aside {
+    background-color: aqua;
+    grid-area: aside;
+}
+
+footer {
+    background-color: rgb(43, 226, 119);
+    grid-area: footer;
+}

@@ -1,0 +1,36 @@
+body{
+    margin: 0px;
+}
+
+header{
+    background-color: yellow;
+    height: 80px;
+    padding: 20px;
+}
+nav{
+    background-color: green;
+    width: 25%;
+}
+
+section{
+    background-color:aliceblue;
+    width: 75%;
+}
+
+nav, section{
+    float: left;
+    height: 700px;
+}
+
+footer{
+    background-color: blue;
+}
+
+p{
+    text-align: justify;
+    font-family:cursive;
+    padding: 10px;
+}
+li{ 
+    list-style: none;
+}

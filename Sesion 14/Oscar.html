@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Oscar.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="contenedor">
+        <nav class= "imagen"  >
+            <p >
+                <img id = "img" src="img/oscar.png" alt="Foto de oscar" >
+            </p>
+        </nav>
+    
+        <article>
+            <h1 class="parrafo">
+                Encuesta de cine: Nominadas al oscar 2018
+            </h1>
+        
+            <form class="formulario" name="formulario" method="post" action="text.php">
+                <fieldset id="datospersonales" >
+                    <legend>Datos Personales</legend>
+                    <label for="nombre">Nombre</label> <br>
+                    <input type="text" name="nombre" id="nombre" style="width: 400px; background-color:transparent; "> <br>
+                    <label for="apellido">Apellido</label> <br>
+                    <input type="text" name="apellido" id="apellido" style="width: 400px; background-color:transparent"> <br>
+                    <label for="dni">DNI</label> <br>
+                    <input type="text" name="dni" id="dni" maxlength="9" style="background-color:transparent"> <br>
+                    <label for="edad">Edad</label> <br>
+                    <input type="text" name="edad" id="edad" style="width: 400px; background-color:transparent"> <br>
+                    <label for="sexo">Sexo</label> <br>
+                    <select id="sexo" name="sexo" style="background-color:transparent">
+                        <option value="a">Femenino</option>
+                        <option value="b">Masculino</option>
+                    </select>
+                    <br>
+        
+                </fieldset>
+                <br>
+        
+        
+        
+                <fieldset id="pelicula">
+        
+                    <legend>Mejor Pelicula</legend>
+                    <input type="radio" id="pelicula1" name="pelicula">
+                    <label for="pel1">Call Me By Your Name</label><br>
+                    <input type="radio" id="pelicula2" name="pelicula">
+                    <label for="pel2">Dunkerque</label><br>
+                    <input type="radio" id="pelicula3" name="pelicula">
+                    <label for="pel3">Dejame salir</label>
+        
+                </fieldset>
+        
+                <br>
+        
+                <fieldset id="peliculasnovistas">
+                    <legend>Seleccione las peliculas que no hayas visto</legend>
+                    <input type="checkbox" id="p1" name="pelicula">
+                    <label for="p1" style="font-family:Arial;">El hilo invisible</label><br>
+                    <input type="checkbox" id="p2" name="pelicula">
+                    <label for="p2" style="font-family:Arial;">El instante mas oscuro</label> <br>
+                    <input type="checkbox" id="p3" name="pelicula">
+                    <label for="p3" style="font-family:Arial;">Tres anuncios a las afueras</label><br>
+                    <input type="checkbox" id="p4" name="pelicula">
+                    <label for="p4" style="font-family:Arial;">La forma del agua</label> <br>
+                    <input type="checkbox" id="p5" name="pelicula">
+                    <label for="p5" style="font-family:Arial;">Lady Bird</label>
+                </fieldset>
+        
+                <br>
+        
+                <fieldset id="argumento">
+                    <legend>Comentarios</legend>
+                    <textarea name="argumento" id="argumento" cols="50" rows="10"></textarea>
+                </fieldset>
+
+                
+                <br>
+
+            
+
+                
+
+               
+            </form>
+            <br>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" class="btn" value="Borrar Formulario" style="width: 200px; height: 30px;"> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       
+            <input type="submit" class="btn" value="Enviar" style="width: 100px;height: 30px">
+
+        </article>
+
+    </div>
+    
+ 
+
+   
+</body>
+</html>
