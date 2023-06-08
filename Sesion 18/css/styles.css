@@ -1,0 +1,21 @@
+.bloque{
+    border: solid red;
+    width: 50;
+    text-align: center;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    float:inline-start;
+}
+
+
+button{
+    font-family: 'Times New Roman';
+    text-align: center;
+    padding: 25px;
+    font-size: 30px;
+}
+
+ol{
+    font-size: 40px;
+}

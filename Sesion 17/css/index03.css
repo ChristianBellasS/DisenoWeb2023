@@ -1,0 +1,14 @@
+body{
+    font-family: Arial;
+    margin: 20px;
+}
+
+h1{
+    color: aqua;
+}
+
+#productoImagen{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10px;
+}

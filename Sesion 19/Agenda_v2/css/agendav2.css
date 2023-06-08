@@ -1,0 +1,21 @@
+input{
+    display: block;
+    margin: 10px;
+}
+
+.datosEntrada{
+    width: 40%;
+    margin: auto;
+    background-color: beige;
+}
+
+span{
+    display: block;
+    width: 100px;
+    float: left;
+    padding-left: 4px;
+}
+
+#botones{
+    display: flex;
+}
