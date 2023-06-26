@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/agendav3.css">
+    <title>Agenda V3</title>
+    
+</head>
+
+<body>
+    
+
+
+    <div class="datosEntrada">
+        <h2>Mi Agenda de Contactos</h2>
+        <hr>
+        <label for="nombre">Nombre</label>
+        <input placeholder="Nombre" type="text" name="nombre" id="nombre">
+
+        <label for="movil">Num Celular</label>
+        <input placeholder="Movil" type="text" name="movil" id="movil">
+
+        <label for="email">Email</label>
+        <input placeholder="Email" type="text" name="email" id="email">
+
+        <hr>
+        <div id = "botones">
+            <input type="button" onclick="guardarDatos()" value="Guardar Datos">
+            <input type="button" onclick="buscarDatos()" value="Recuperar Datos">
+            <input type="button" onclick="eliminarDatos()" value="Eliminar">
+            <input type="button" onclick="eliminarTodo()" value="Eliminar Todos">
+
+        </div>
+        <hr>
+
+        <span class="titu"> Nombre</span>
+        <span class="titu"> Celular </span>
+        <span class="titu"> Email</span> 
+        <br>
+        <br>
+        <ul id = "cont">
+                        
+        </ul>
+
+    </div>
+
+
+
+    <script src="js/agendav3.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+body {
+    color: aliceblue;
+    font-family: arial;
+}
+
+header {
+    background-color: blueviolet;
+    height: 150px;
+}
+
+nav {
+    background-color: rgb(70, 147, 180);
+    height: 50px;
+}
+
+section {
+    background-color: brown;
+    height: 300px;
+}
+
+aside {
+    background-color: aqua;
+    height: 50px;
+}
+
+footer {
+    background-color: rgb(43, 226, 119);
+    height: 100px;
+}
+
+@media(min-width: 570px){
+    nav{
+        height: 70px;
+    }
+    aside, section{
+        height: 500px;
+    }
+}
+
+@media(min-width: 768px){
+    nav, aside, section{
+        height: 450px;
+    }
+}

@@ -1,0 +1,28 @@
+.bandera{
+    width: 300px;
+    height: 200px;
+    position: relative;
+}
+
+.bandera div{
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.bandera::before, .bandera::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    background-color: red;
+    width: 100px;
+}
+
+.bandera::after{
+    right: 0px;
+}

@@ -1,0 +1,63 @@
+
+input{
+    display: block;
+    margin: 10px;
+} 
+
+.datosEntrada{
+    width: 50%;
+    height: 450px;
+    margin: auto;
+    background-color: aquamarine;
+    border-color: brown;
+} 
+
+#botones{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+} 
+ 
+
+span{
+    width: 100px;
+    display: block;
+    float: left;
+    padding-left: 4px;
+} 
+
+li{
+    list-style:  none;
+    margin-top:  1px;
+}
+
+.nom{
+    background-color: bisque;
+    width: 200px;
+}
+
+.titu{
+    background-color: yellow;
+    width: 200px;
+}
+
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+h2{
+    text-align: center;
+    font-family: system-ui, -apple-system;
+    color: red;
+}
+
+label{
+    padding: 10px;
+    color: blue;
+    font-size: 15px;
+    font-family:Verdana;
+}
+
+body{
+    background-image: url(img/fondo.jpg);
+}

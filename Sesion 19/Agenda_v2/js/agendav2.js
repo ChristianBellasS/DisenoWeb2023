@@ -1,21 +1,40 @@
 function guardarDatos(){
-    localStorage.nombre = document.getElementById("nombre").value;
-    localStorage.movil = document.getElementById("movil").value;
-
+    var nombre = document.getElementById("nombre").value;
+    var movil = document.getElementById("movil").value;
+    localStorage.setItem(nombre,movil);
+    document.getElementById("nombre").value = "";
+    document.getElementById("movil").value = "";
+    actualizarDatos();
 } 
 
-function recuperarDatos(){
-    if(localStorage.nombre != undefined && localStorage.movil != undefined){
-        document.getElementById("datos").innerHTML = "Nombre: " + " Num Celular: <br>" + localStorage.nombre + localStorage.movil;
-    } else {
-        document.getElementById("datos").innerHTML = "No has ingresado tus datos en la agenda";
-    }  
+function buscarDatos(){
+    var nombre = document.getElementById("nombre").value;
+    localStorage.getItem(nombre);
+    document.getElementById("movil").value = localStorage.getItem(nombre);
+
 }
 
 function eliminarDatos(){
-
+    var nombre = document.getElementById("nombre").value;
+    localStorage.removeItem(nombre);
+    actualizarDatos();
 }
 
 function eliminarTodos(){
-    
+    localStorage.clear();
+    actualizarDatos();
+}
+
+function actualizarDatos(){
+    var registro ="";
+    if (localStorage.length === 0) {
+        registro += '<li> vacío </li>';
+    }else{
+        for (let i = 0; i <= localStorage.length -1; i++) {
+            var key = localStorage.key(i);
+            registro += '<li>' + '<span class = "nom">' + key + '</span>' + 
+            '<span class = "nom" >' + localStorage.getItem(key) + '</span> </li> <br>' ;
+        }
+    }
+    document.getElementById("contactos").innerHTML = registro;
 }

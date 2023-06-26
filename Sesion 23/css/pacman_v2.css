@@ -1,0 +1,172 @@
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: #000000;
+
+}
+
+.contenedor{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cargando{
+    margin: 100px auto;
+    width: 70%;
+    height: 100px;
+    border: 3px solid #0027a9;
+    border-radius: 60px;
+    box-shadow: 0 4px 40px 0 #0027a9 inset, 0 4px 40px 0 #0027a9;
+    position: relative;
+    overflow: hidden;
+}
+
+.pacman{
+    position: absolute;
+    top: 25%;
+    left: -10%;
+    z-index: 1;
+    margin: auto;
+    animation: corre 5.8s linear infinite;
+}
+
+.arriba{
+    width: 50px;
+    height: 25px;
+    background: #ffff00;
+    border-radius: 100px 100px 0 0;
+    transform: rotate(0deg);
+    transform-origin: 50% 100%;
+    animation: come .4s ease alternate infinite;
+}
+
+.abajo{
+    width: 50px;
+    height: 25px;
+    background: #ffff00;
+    border-radius: 0 0 100px 100px;
+    transform: rotate(0deg);
+    transform-origin: 50% 0%;
+    animation: come2 .4s ease alternate infinite;
+}
+
+.fantasmita{
+    background-color: rgb(43, 226, 76);
+    color: white;
+    top: 25%;
+    left: -10%;
+    margin: auto;
+    padding: .2rem .3rem 1rem .3rem;
+    position: absolute;
+    border-radius: 2rem 2rem 0 0;
+    animation: corre 6s linear infinite;
+}
+.fantasmita1{
+    background-color: rgb(226, 43, 43);
+    color: white;
+    top: 25%;
+    left: -10%;
+    margin: auto;
+    padding: .2rem .3rem 1rem .3rem;
+    position: absolute;
+    border-radius: 2rem 2rem 0 0;
+    animation: corre 6.2s linear infinite;
+}
+.fantasmita2{
+    background-color: rgb(156, 43, 226);
+    color: white;
+    top: 25%;
+    left: -10%;
+    margin: auto;
+    padding: .2rem .3rem 1rem .3rem;
+    position: absolute;
+    border-radius: 2rem 2rem 0 0;
+    animation: corre 6.4s linear infinite;
+}
+
+@keyframes come{
+    from{
+        transform: rotate(-45deg);
+    }
+    to{
+        transform: rotate(0);
+    }
+}
+
+@keyframes come2 {
+    from{
+        transform: rotate(45deg);
+    }
+    to{
+        transform: rotate(0);
+    }
+}
+
+@keyframes corre {
+    100%{
+        left: 100%;
+    }
+}
+
+.comida{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-grow: 7;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.comida1, .comida2, .comida3, .comida4, .comida5, .comida6{
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.comida1{
+    animation: movimiento 5.8s infinite .8s;
+}
+
+.comida2{
+    animation: movimiento 5.8s infinite 1.6s;
+}
+
+.comida3{
+    animation: movimiento 5.8s infinite 2.6s;
+}
+
+.comida4{
+    animation: movimiento 5.8s infinite 3.3s;
+}
+
+.comida5{
+    animation: movimiento 5.8s infinite 4.3s;
+}
+
+.comida6{
+    animation: movimiento 5.8s infinite 5.2s;
+}
+
+@keyframes movimiento {
+    0%{
+        transform: scale(0);
+    }
+    65%{
+        transform: scale(0);
+    }
+    70%{
+        transform: scale(2);
+    }
+    75%{
+        transform: scale(0);
+    }
+}
