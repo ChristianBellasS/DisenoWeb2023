@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tienda Modals</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Barra superior -->
+    <div class="container-fluid">
+        <div class="row py-1 px-xl-5">
+            <div class="col-lg-6 d-none d-lg-block">
+                <!--nav& tabs
+                    https://getbootstrap.com/docs/5.3/components/navs-tabs/ 
+                    codigo del primer Nav&tab -->
+                <ul class="nav nav-underline">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ayuda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">FAQS</a>
+                    </li>
+                </ul>
+
+                <!--underline
+                    https://getbootstrap.com/docs/5.3/components/navs-tabs/#underline 
+                    agregar linea para detectar linea activa-->
+
+                <!--visible solo en md
+                    https://getbootstrap.com/docs/5.3/utilities/display/#hiding-elements -->
+
+
+
+
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <!-- Pill con dropdown
+                    https://getbootstrap.com/docs/5.3/components/navs-tabs/#pills-with-dropdowns
+                    usar la parte de dropdown-->
+                    <ul class="nav nav-pills">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-expanded="false">Mi Cuenta</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Iniciar Sesión</a></li>
+                                <li><a class="dropdown-item" href="#">Cambiar Contraseña</a></li>
+                                <li><a class="dropdown-item" href="#">Actualizar Datos</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                            </ul>
+                        </li>
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Moneda</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">EUR</a></li>
+                            <li><a class="dropdown-item" href="#">DOL</a></li>
+                            <li><a class="dropdown-item" href="#">PEN</a></li>
+                        </ul>
+                        </li>
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Idioma</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">ESP</a></li>
+                            <li><a class="dropdown-item" href="#">EN</a></li>
+                            <li><a class="dropdown-item" href="#">FRA</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+
+                    <!--colocar menu en vertical
+                    https://getbootstrap.com/docs/5.3/components/navs-tabs/#vertical -->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- aca va marca logotipo -->
+            <div class="col-6 col-lg-4">
+                <span class="h1 text-uppercase text-primary bg-dark">TIENDAS</span>
+                <span class="h1 text-uppercase text-dark bg-primary">MODALS</span>
+            </div>
+
+            <div class="col-6 col-lg-4 text-left">
+                <!--formulario de búsqueda
+                https://getbootstrap.com/docs/5.3/components/navbar/#forms 
+                agregar CDN font awesome
+                cambiar buscar por una lupa -->
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit"><i
+                                    class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block">
+                <!--visibilidad de los bloques
+                    https://getbootstrap.com/docs/5.3/utilities/display/#hiding-elements -->
+                <p class="m-0">Servicio Cliente</p>
+                <h5 class="m-0">+51 944 830 496</h5>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Barra de navegación -->
+    <div class="container-fluid">
+        <div class="row px-xl-5 d-flex">
+            <div class="col-lg-1 d-none d-lg-block">
+                <!--agregar un dropdown simple - dropdown link
+                    https://getbootstrap.com/docs/5.3/components/dropdowns/#single-button -->
+
+            </div>
+            <div class="col-lg-12">
+                <!-- agregar nav bar, uno con dropdown
+                    https://getbootstrap.com/docs/5.3/components/navbar/#nav -->
+                <nav class="navbar navbar-expand-lg bg-body-tertiary  p-xl-2" data-bs-theme="dark">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categorías
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ropa de Hombre</a></li>
+                            <li><a class="dropdown-item" href="#">Ropa de Mujer</a></li>
+                            <li><a class="dropdown-item" href="#">Electrodomésticos</a></li>
+                            <li><a class="dropdown-item" href="#">Tecnologías</a></li>
+                        </ul>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-primary" aria-current="page" href="#">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link  text-primary" href="#">Tienda</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-primary" data-bs-toggle="dropdown" href="#"
+                                        role="button" aria-expanded="false">Mis Páginas</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Página de inicio</a></li>
+                                        <li><a class="dropdown-item" href="#">Catálogo de ropa</a></li>
+                                        <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-primary" href="#">Contactanos</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5>
+                                <span class="badge bg-secondary">
+                                    <i class="fa-solid fa-cart-shopping fa-beat"></i>
+                                </span>
+                            </h5>
+                        </div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;
+                        <div>
+                            <h5>
+                                <span class="badge bg-secondary">
+                                    <i class="fa-solid fa-heart fa-beat"></i>
+                                </span>
+                            </h5>
+                        </div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;
+                        <div>
+                            <h5>
+                                <span class="badge bg-secondary">
+                                    <i class="fa-solid fa-fire fa-beat"></i>
+                                </span>
+                            </h5>
+                        </div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;
+                        <div>
+                            <h5>
+                                <span class="badge bg-secondary">
+                                    <i class="fa-brands fa-paypal fa-beat"></i>
+                                </span>
+                            </h5>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- cambiar barra a fondo negro
+                    https://getbootstrap.com/docs/5.3/components/navbar/#color-schemes -->
+
+                <!-- al final agregar los badges, dentro del Nav. no agregar en boton, sino en un div
+                     https://getbootstrap.com/docs/5.3/components/badge/ -->
+
+                <!-- cambiar el color del boton
+                     https://getbootstrap.com/docs/5.3/components/buttons/ -->
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Carousel -->
+    <div class="container-fluid my-3">
+        <div class="row px-xl-2">
+            <div class="col-lg-8">
+                <!-- insertar carousel caption 
+                https://getbootstrap.com/docs/5.3/components/carousel/#captions -->
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/ropa_hombre.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Ropa para Hombres</h5>
+                                <p>Contamos con un amplio catálogo de ropa que puede ser de tu interés.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/fondo_mujer.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Ropa para Mujer</h5>
+                                <p>Contamos con un amplio catálogo de ropa que puede ser de tu interés.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/fondo05.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+            <div class="col-lg-4">
+                <!-- insertar un Card
+                https://getbootstrap.com/docs/5.3/components/card/#example -->
+                <div class="card text-bg-dark" style="width: 26rem;">
+                    <img src="img/oferta01.png" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h3 class="card-title">AHORRE 20% EN SU COMPRA</h3>
+                        <p class="card-text">
+                        <h4>Oferta especial solo por hoy</h4><br>
+                        </p>
+                        <a href="#" class="btn btn-primary">Comprar Ahora</a>
+                    </div>
+                </div><br>
+                <div class="card text-bg-dark" style="width: 26rem;">
+                    <img src="img/oferta03.png" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h3 class="card-title">AHORRE 20% EN SU COMPRA</h3>
+                        <p class="card-text">
+                        <h4>Oferta especial solo por hoy</h4><br>
+                        </p>
+                        <a href="#" class="btn btn-primary">Comprar Ahora</a>
+                    </div>
+                </div><br>
+
+                <!-- Hacer que elementos se sobrepongan
+                https://getbootstrap.com/docs/5.3/components/card/#image-overlays -->
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Presentación -->
+    <div class="container-fluid pt-2">
+        <div class="row px-xl-5 pb-3">
+            <div class="col-sm-6 col-md-3">
+                <!-- insertar tarjetas horizontales, editar img por font awesome
+                https://getbootstrap.com/docs/5.3/components/card/#horizontal -->
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-check fa-bounce fa-2xl" style="color: #005eff;"></i>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Calidad extra garantizada</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-flex justify-content-center align-items-center">
+                            <i class="fa-sharp fa-solid fa-truck fa-bounce fa-2xl" style="color: #005eff;"></i>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Envío sin costo adicional</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-arrow-right-arrow-left fa-bounce fa-2xl" style="color: #005eff;"></i>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">14 días para la devolución</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-phone-volume fa-bounce fa-2xl" style="color: #005eff;"></i>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Soporte a cualquier hora</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <h1 class="p-3">Productos</h1>
+    <hr>
+    <!-- Productos -->
+    <div class="container-fluid py-2">
+        <!-- insertar caja con borde inferior para el título.
+            https://getbootstrap.com/docs/5.3/utilities/borders/#color -->
+
+        <div class="row px-xl-5">
+            <!-- insertar 8 card grid. el que tiene espacio para un footer. ,  
+                https://getbootstrap.com/docs/5.3/components/card/#grid-cards -->
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="img/polo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">POLO ALGODONADO</h5>
+                            <h5 class="card-title text-center">S/25.00 <del style="font-size: 18px;">S/35,00</del></h5>
+                            <button type="button" class="btn btn-primary"
+                                style="display: block; margin: 0 auto;">Comprar
+                            </button>
+                            <p class="card-text text-center">¡Eleva tu estilo con esta prenda de moda imprescindible!
+                                Descubre la
+                                combinación perfecta entre elegancia y comodidad en nuestro exclusivo polo.</p>
+                            <div class="card-footer text-center">
+                                <small class="text-body-secondary">
+                                    <i class="fa-solid fa-star fa-flip" style="color: #eeff00;"></i>
+                                    <i class="fa-solid fa-star fa-flip" style="color: #eeff00;"></i>
+                                    <i class="fa-solid fa-star fa-flip" style="color: #eeff00;"></i>
+                                    <i class="fa-sharp fa-regular fa-star fa-flip"></i>
+                                    <i class="fa-sharp fa-regular fa-star fa-flip"></i>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/camara.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">CÁMARA HD - 4K</h5>
+                            <h5 class="card-title text-center">S/1,500.00 <del style="font-size: 18px;">S/1,800.00</del>
+                            </h5>
+                            <button type="button" class="btn btn-primary"
+                                style="display: block; margin: 0 auto;">Comprar
+                            </button>
+                            <p class="card-text text-center">¡Descubre la magia en cada disparo con nuestra cámara,
+                                capturando
+                                momentos únicos y convirtiéndolos en eternas obras de arte!
+                            </p>
+                            <div class="card-footer text-center">
+                                <small class="text-body-secondary">
+                                    <i class="fa-solid fa-star fa-flip" style="color: #eeff00;"></i>
+                                    <i class="fa-solid fa-star fa-flip" style="color: #eeff00;"></i>
+                                    <i class="fa-sharp fa-regular fa-star fa-flip"></i>
+                                    <i class="fa-sharp fa-regular fa-star fa-flip"></i>
+                                    <i class="fa-sharp fa-regular fa-star fa-flip"></i>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/lampara.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">LAMPARA LED</h5>
+                            <h5 class="card-title text-center">S250.00 <del style="font-size: 18px;">S/275.00</del></h5>
+                            <button type="button" class="btn btn-primary"
+                                style="display: block; margin: 0 auto;">Comprar
+                            </button>
+                            <p class="card-text text-center">Descubre la lámpara que transformará tus espacios en un
+                                oasis de luz y
+                                elegancia. ¡Deja que la magia ilumine tu vida!</p>
+                            <div class="card-footer text-center">
+                                <small class="text-body-secondary">
+                                    <i class="fa-solid fa-star fa-flip" style="color: #eeff00;"></i>
+                                    <i class="fa-sharp fa-regular fa-star fa-flip"></i>
+                                    <i class="fa-sharp fa-regular fa-star fa-flip"></i>
+                                    <i class="fa-sharp fa-regular fa-star fa-flip"></i>
+                                    <i class="fa-sharp fa-regular fa-star fa-flip"></i>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/zapas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">ZAPATILLAS ADIDAS</h5>
+                            <h5 class="card-title text-center">S350.00 <del style="font-size: 18px;">S/415.00</del></h5>
+                            <button type="button" class="btn btn-primary"
+                                style="display: block; margin: 0 auto;">Comprar
+                            </button>
+                            <p class="card-text text-center">"¡Ponte en movimiento con nuestras zapatillas
+                                revolucionarias que te
+                                llevarán a otro nivel de confort y estilo!."</p>
+                            <div class="card-footer text-center">
+                                <small class="text-body-secondary ">
+                                    <i class="fa-solid fa-star fa-flip" style="color: #eeff00;"></i>
+                                    <i class="fa-solid fa-star fa-flip" style="color: #eeff00;"></i>
+                                    <i class="fa-solid fa-star fa-flip" style="color: #eeff00;"></i>
+                                    <i class="fa-solid fa-star fa-flip" style="color: #eeff00;"></i>
+                                    <i class="fa-sharp fa-regular fa-star fa-flip"></i>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- agregar botón tipo enlace dentro del card
+                https://getbootstrap.com/docs/5.3/components/buttons/#button-tags -->
+
+
+        </div>
+        <div class="row px-xl-5">
+            <!-- insertar 8 card grid. el que tiene espacio para un footer. ,  
+                https://getbootstrap.com/docs/5.3/components/card/#grid-cards -->
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="img/dron.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">DRON</h5>
+                            <h5 class="card-title text-center">S1,200.00 <del style="font-size: 18px;">S/1,350.00</del>
+                            </h5>
+                            <button type="button" class="btn btn-primary"
+                                style="display: block; margin: 0 auto;">Comprar
+                            </button>
+                            <p class="card-text text-center">"¡Eleva tus aventuras a nuevas alturas con nuestro dron de
+                                última
+                                generación! Descubre el poder de la libertad y la emoción. </p>
+                            <div class="card-footer text-center">
+                                <small class="text-body-secondary">
+                                    <i class="fa-solid fa-star fa-flip" style="color: #eeff00;"></i>
+                                    <i class="fa-solid fa-star fa-flip" style="color: #eeff00;"></i>
+                                    <i class="fa-solid fa-star fa-flip" style="color: #eeff00;"></i>
+                                    <i class="fa-solid fa-star fa-flip" style="color: #eeff00;"></i>
+                                    <i class="fa-solid fa-star fa-flip" style="color: #eeff00;"></i>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/reloj.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">SMART WATCH</h5>
+                            <h5 class="card-title text-center">S250.00 <del style="font-size: 18px;">S/280.00</del></h5>
+                            <button type="button" class="btn btn-primary"
+                                style="display: block; margin: 0 auto;">Comprar
+                            </button>
+                            <p class="card-text text-center">¡Tu vida en la muñeca! Experimenta el futuro ahora con
+                                nuestro smartwatch de vanguardia. Convierte tu muñeca en un centro de control
+                                personalizado,</p>
+                            <div class="card-footer text-center">
+                                <small class="text-body-secondary">
+                                    <i class="fa-solid fa-star fa-flip" style="color: #eeff00;"></i>
+                                    <i class="fa-solid fa-star fa-flip" style="color: #eeff00;"></i>
+                                    <i class="fa-solid fa-star fa-flip" style="color: #eeff00;"></i>
+                                    <i class="fa-sharp fa-regular fa-star fa-flip"></i>
+                                    <i class="fa-sharp fa-regular fa-star fa-flip"></i>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/vestido.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">VESTIDO DE SEDA</h5>
+                            <h5 class="card-title text-center">S35.00 <del style="font-size: 18px;">S/48.00</del></h5>
+                            <button type="button" class="btn btn-primary"
+                                style="display: block; margin: 0 auto;">Comprar
+                            </button>
+                            <p class="card-text text-center">"El vestido que te hará brillar como una estrella:
+                                elegante, sensual y lleno de encanto. ¡Deslumbra con nuestra creación única y
+                                cautivadora!</p>
+                            <div class="card-footer text-center">
+                                <small class="text-body-secondary">
+                                    <i class="fa-solid fa-star fa-flip" style="color: #eeff00;"></i>
+                                    <i class="fa-sharp fa-regular fa-star fa-flip"></i>
+                                    <i class="fa-sharp fa-regular fa-star fa-flip"></i>
+                                    <i class="fa-sharp fa-regular fa-star fa-flip"></i>
+                                    <i class="fa-sharp fa-regular fa-star fa-flip"></i>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/silla_gamer.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">SILLA GAMER</h5>
+                            <h5 class="card-title text-center">S1,200.00 <del style="font-size: 18px;">S/1,350.00</del>
+                            </h5>
+                            <button type="button" class="btn btn-primary"
+                                style="display: block; margin: 0 auto;">Comprar
+                            </button>
+                            <p class="card-text text-center">
+                                "Domina el juego con estilo y comodidad suprema. Nuestra silla gamer te transportará a
+                                un mundo de emociones intensas y victorias épicas.</p>
+                            <div class="card-footer text-center">
+                                <small class="text-body-secondary">
+                                    <i class="fa-solid fa-star fa-flip" style="color: #eeff00;"></i>
+                                    <i class="fa-solid fa-star fa-flip" style="color: #eeff00;"></i>
+                                    <i class="fa-solid fa-star fa-flip" style="color: #eeff00;"></i>
+                                    <i class="fa-sharp fa-regular fa-star fa-flip"></i>
+                                    <i class="fa-sharp fa-regular fa-star fa-flip"></i>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pie de página -->
+        <div class="my-5">
+            <footer class="text-center text-lg-start text-white" style="background-color: #929fba">
+                <!-- Grid container -->
+                <div class="container p-4 pb-0">
+                    <!-- Section: Links -->
+                    <section class="">
+                        <!--Grid row-->
+                        <div class="row">
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">
+                                    BellasShop
+                                </h6>
+                                <p class="">
+                                    "En BellasShop, la excelencia es nuestro sello distintivo. Te invitamos a descubrir
+                                    un universo de tecnología, moda y electrodomésticos que elevarán tu estilo de vida.
+                                    Sumérgete en un mundo de innovación y tendencias, donde encontrarás lo último en
+                                    tendecnias.
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+
+                            <hr class="w-100 clearfix d-md-none" />
+
+                            <!-- Grid column -->
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">Productos</h6>
+                                <p>
+                                    <a class="text-white">Prendas Masculinas</a>
+                                </p>
+                                <p>
+                                    <a class="text-white">Prendas Femeninas</a>
+                                </p>
+                                <p>
+                                    <a class="text-white">Tecnología</a>
+                                </p>
+                                <p>
+                                    <a class="text-white">Electrodomésticos</a>
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+
+                            <hr class="w-100 clearfix d-md-none" />
+
+                            <!-- Grid column -->
+                            <hr class="w-100 clearfix d-md-none" />
+
+                            <!-- Grid column -->
+                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+                                <p><i class="fas fa-home mr-3"></i> Fanny Abanto Mz C Lote 8</p>
+                                <p><i class="fas fa-envelope mr-3"></i> cpbellasmil@gmail.com</p>
+                                <p><i class="fas fa-phone mr-3"></i> + 51 944 830 496</p>
+                                <p><i class="fas fa-print mr-3"></i> + 51 954 516 369</p>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+                                <!-- Facebook -->
+                                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998"
+                                    href="https://www.facebook.com/BellasScraxk" target="_blank" role="button"><i
+                                        class="fab fa-facebook-f"></i></a>
+
+                                <!-- Twitter -->
+                                <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee"
+                                    href="https://twitter.com/?lang=es" target="_blank" role="button"><i
+                                        class="fab fa-twitter"></i></a>
+
+                                <!-- Google -->
+                                <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!"
+                                    role="button"><i class="fab fa-google"></i></a>
+
+                                <!-- Instagram -->
+                                <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac"
+                                    href="https://www.instagram.com/bellasscraxk/" target="_blank" role="button"><i
+                                        class="fab fa-instagram"></i></a>
+
+                                <!-- Linkedin -->
+                                <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca"
+                                    href="https://pe.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F"
+                                    target="_blank" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+                                <!-- Github -->
+                                <a class="btn btn-primary btn-floating m-1" style="background-color: #333333"
+                                    href="https://github.com/ChristianBellasS/DisenoWeb2023" target="_blank"
+                                    role="button"><i class="fab fa-github"></i></a>
+
+                            </div>
+                        </div>
+                        <!--Grid row-->
+                    </section>
+                    <!-- Section: Links -->
+                </div>
+                <!-- Grid container -->
+
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                    © 2023 Copyright:
+                    <a class="text-white" href="https://mdbootstrap.com/">cpbellasmil@gmail.com</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
+
+            <!-- insertar pie de página
+        https://mdbootstrap.com/docs/standard/navigation/footer/examples-and-customization/ -->
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

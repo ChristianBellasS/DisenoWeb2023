@@ -1,0 +1,189 @@
+#juego {
+    text-align: center;
+}
+
+#laberinto {
+    width: 1060px;
+    height: 720px;
+    display: inline-block;
+
+}
+
+#fantasmita1 {
+    background-color: rgb(255, 11, 11);
+    color: white;
+    padding: .2rem .3rem .6rem .3rem;
+    position: absolute;
+    border-radius: 2rem 2rem 0 0;
+    animation: animar1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+#fantasmita2 {
+    background-color: rgb(247, 140, 0);
+    color: white;
+    padding: .2rem .3rem .6rem .3rem;
+    position: absolute;
+    border-radius: 2rem 2rem 0 0;
+    animation: animar2;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+}
+
+#fantasmita3 {
+    background-color: rgb(66, 226, 17);
+    color: white;
+    padding: .2rem .3rem .6rem .3rem;
+    position: absolute;
+    border-radius: 2rem 2rem 0 0;
+    animation: animar3;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animar1 {
+    0% {
+        left: 30%;
+        top: 17%;
+    }
+
+    8% {
+        left: 30%;
+        top: 17%;
+    }
+    16%{
+        left: 18%;
+        top: 17%;
+    }
+    24%{
+        left: 18%;
+        top: 5%;
+    }
+    35%{
+        left: 45%;
+        top: 5%;
+    }
+    43%{
+        left: 45%;
+        top: 16%;
+    }
+    55%{
+        left: 68%;
+        top: 16%;
+    }
+    72%{
+        left: 68%;
+        top: 70%;
+    }
+    86%{
+        left: 31%;
+        top: 70%;
+    }
+    100%{
+        left: 30%;
+        top: 17%;
+    }
+
+}
+@keyframes animar2 {
+    0% {
+        left: 49%;
+        top: 35%;
+    }
+
+    8% {
+        left: 38%;
+        top: 35%;
+    }
+    18%{
+        left: 38%;
+        top: 61%;
+    }
+    28%{
+        left: 19%;
+        top: 61%;
+    }
+    32%{
+        left: 19%;
+        top: 70%;
+    }
+    36%{
+        left: 23%;
+        top: 70%;
+    }
+    40%{
+        left: 23%;
+        top: 79%;
+    }
+    44%{
+        left: 18%;
+        top: 79%;
+    }
+    50%{
+        left: 18%;
+        top: 88%;
+    }
+    66%{
+        left: 80%;
+        top: 88%;
+    }
+    72%{
+        left: 80%;
+        top: 79%;
+    }
+    77%{
+        left: 68%;
+        top: 79%;
+    }
+    82%{
+        left: 68%;
+        top: 43%;
+    }
+    88%{
+        left: 60%;
+        top: 43%;
+    }
+    94%{
+        left: 60%;
+        top: 34%;
+    }
+    100%{
+        left: 49%;
+        top: 35%;
+    }
+}
+@keyframes animar3 {
+    0% {
+        left: 74%;
+        top: 43%;
+    }
+    20% {
+        left: 60%;
+        top: 43%;
+    }
+    30% {
+        left: 60%;
+        top: 52%;
+    }
+    50% {
+        left: 38%;
+        top: 52%;
+    }
+    56% {
+        left: 38%;
+        top: 61%;
+    }
+    70% {
+        left: 31%;
+        top: 61%;
+    }
+    80% {
+        left: 31%;
+        top: 43%;
+    }
+    100% {
+        left: 15%;
+        top: 43%;
+    }
+}
